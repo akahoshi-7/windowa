@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/codecode/image/windowLogo.jpg" type="image/x-icon">
+    <title>Windowa</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Major+Mono+Display&family=Share+Tech+Mono&display=swap');
+    </style>
+</head>
+
+<body>
+    <main class="calice">
+        <div class="jogui">
+            <button class="apps active" onclick="xp('tab1', this)">Paint</button>
+            <button class="apps" ondblclick="jumpscare()">Nao clique.rar</button>
+            <button class="apps" onclick="xp('tab3', this)">bloco de notas</button>
+            <button class="apps" onclick="xp('tab4', this)">Window Explorer</button>
+        </div>
+
+        <div class="prin">
+            <div id="tab1" class="tab-content">
+                <div class="mexerBar">
+                    Paint
+                    <button id="close" onclick="fechaXp('tab1')">x</button>
+                </div>
+                <div class="paint">
+                    <button id="reset">reset</button>
+                    <button id="eras">borracha</button>
+                    <button id="pincel">Pincel</button>
+                    <input type="color" id="corzinha">
+                    <input type="range" id="espes">
+                    <button id="sv" onclick="salvar()">salvar</button>
+                </div>
+                <canvas id="canvas" width="795" height="490"></canvas>
+            </div>
+
+            <div id="tab3" class="tab-content">
+                <div class="mexerBar">
+                    Bloco de notas
+                    <button id="close" onclick="fechaXp('tab3')">x</button>
+                </div>
+                <div class="note">
+                    <input type="text">
+                </div>
+            </div>
+
+            <div id="tab4" class="tab-content">
+                <div class="mexerBar">
+                    Window Explorer
+                    <button id="close" onclick="fechaXp('tab4')">x</button>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer class="barraOfWork">
+        <button onclick="" id="ferra_start">
+            <img src="/codecode/image/windowLogo.jpg" alt="logo">
+            Start
+        </button>
+        <div class="right">
+            <button onclick="" class="ferra"></button> <!--som-->
+            <button onclick="" class="ferra">time</button>
+        </div>
+    </footer>
+    <script src="index.js" defer></script>
+    <img id="jumpscare-img" src="/codecode/image/Jerry the gerble.jpg" alt="">
+    <audio id="jumpscare-audio" src="bear5_scream.mp3"></audio>
+</body>
+
+</html>

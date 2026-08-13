@@ -1,0 +1,241 @@
+:root {
+    --cor_fu: rgb(255, 191, 223);
+    --cor_se: pink;
+    --barraTra: rgb(26, 99, 255);
+    --cor_xp: #808080;
+    --cor_xp2: #ffffff;
+    --cor_xpBar: rgb(71, 130, 255);
+    --cor_close: rgb(243, 54, 54);
+    --cor_close2: rgb(250, 115, 115);
+    --cor_app: rgb(231, 231, 231);
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+
+    background-image: url("/codecode/image/window.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Share Tech Mono", monospace;
+}
+
+.calice {
+    display: flex;
+    flex: 1;
+}
+
+.jogui {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    padding: 30px;
+}
+
+
+.barraOfWork {
+    display: flex;
+    background-color: var(--barraTra);
+    width: 100%;
+    height: 40px;
+    border: 4px solid;
+    border-color: var(--cor_xpBar);
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.ferra {
+    width: 50px;
+    height: 30px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    white-space: nowrap;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ferra:nth-of-type(1) {
+    background-image: url(/codecode/image/sound.png);
+}
+
+.ferra:nth-of-type(2) {
+    background-image: url(/codecode/image/wifi.png);
+}
+
+.ferra:hover {
+    background-color: var(--cor_xpBar);
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#ferra_start {
+    display: flex;
+    width: 150px;
+    height: 35px;
+    border-radius: 12px;
+    align-items: center;
+    background: linear-gradient(to top, rgb(9, 158, 9), rgb(16, 211, 16));
+    color: white;
+    font-weight: 800;
+    font-size: 25px;
+    justify-content: center;
+    border-color: rgb(143, 255, 143);
+}
+
+#ferra_start img {
+    background-image: url(/codecode/image/windowLogo.jpg);
+    width: 50px;
+    height: 50px;
+}
+
+#ferra_start:hover {
+    filter: brightness(1.2);
+}
+
+
+#ferra_start:active {
+    transform: scale(0.95);
+}
+
+.apps {
+    background-position: center;
+    background-size: 120px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: column-reverse;
+    color: white;
+    font-size: 17px;
+    width: 100px;
+    height: 120px;
+    border: none;
+    cursor: pointer;
+}
+
+.apps:hover {
+    background-color: rgba(204, 228, 255, 0.226);
+}
+
+.apps:nth-child(1) {
+    background-image: url(/codecode/image/paint.png);
+    background-size: 80px;
+}
+
+.apps:nth-child(2) {
+    background-image: url(/codecode/image/rar.png);
+}
+
+.apps:nth-child(3) {
+    background-image: url(/codecode/image/bloco.png);
+}
+
+.apps:nth-child(4) {
+    background-image: url(/codecode/image/window_explorer.png);
+    background-size: 150px;
+}
+
+#jumpscare-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    z-index: 9999;
+}
+
+.tab-content {
+    display: none;
+    width: 800px;
+    height: 600px;
+    background-color: var(--cor_app);
+    position: absolute;
+    border: 3px solid var(--cor_xpBar);
+    font-size: 25px;
+    color: white;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.mexerBar {
+    background: var(--barraTra);
+    background-image: linear-gradient(to bottom, var(--barraTra), var(--cor_xpBar));
+    border: 4px solid var(--cor_xpBar);
+    padding: 10px;
+    cursor: grab;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+#close {
+    display: flex;
+    background-image: linear-gradient(to left, var(--cor_close), var(--cor_close2));
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*tab1*/
+.paint {
+    display: flex;
+    width: 794px;
+    height: 50px;
+    background-color: rgb(206, 201, 201);
+    box-shadow: #808080;
+    border: solid 3px rgb(235, 235, 235);
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.paint button {
+    width: 65px;
+    height: 30px;
+}
+
+#canvas {
+    cursor: crosshair;
+    margin-top: 46px;
+}
+
+#espes {
+    width: 200px;
+}
+
+/*tab2*/
+
+.note {
+    width: 795px;
+    height: 536px;
+}
