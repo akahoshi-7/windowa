@@ -17,7 +17,7 @@ body {
     height: 100vh;
     overflow: hidden;
 
-    background-image: url("/codecode/image/window.jpg");
+    background-image: url("./image/window.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -71,11 +71,11 @@ body {
 }
 
 .ferra:nth-of-type(1) {
-    background-image: url(/codecode/image/sound.png);
+    background-image: url(./image/sound.png);
 }
 
 .ferra:nth-of-type(2) {
-    background-image: url(/codecode/image/wifi.png);
+    background-image: url(./image/wifi.png);
 }
 
 .ferra:hover {
@@ -103,7 +103,7 @@ body {
 }
 
 #ferra_start img {
-    background-image: url(/codecode/image/windowLogo.jpg);
+    background-image: url(./image/windowLogo.jpg);
     width: 50px;
     height: 50px;
 }
@@ -138,20 +138,20 @@ body {
 }
 
 .apps:nth-child(1) {
-    background-image: url(/codecode/image/paint.png);
+    background-image: url(./image/paint.png);
     background-size: 80px;
 }
 
 .apps:nth-child(2) {
-    background-image: url(/codecode/image/rar.png);
+    background-image: url(./image/rar.png);
 }
 
 .apps:nth-child(3) {
-    background-image: url(/codecode/image/bloco.png);
+    background-image: url(./image/bloco.png);
 }
 
 .apps:nth-child(4) {
-    background-image: url(/codecode/image/window_explorer.png);
+    background-image: url(./image/window_explorer.png);
     background-size: 150px;
 }
 
